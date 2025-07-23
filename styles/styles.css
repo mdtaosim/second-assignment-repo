@@ -48,7 +48,8 @@ section {
     font-size: 1.5rem;
     margin-top: 13px;
 }
-.primary-btn{
+
+.primary-btn {
     font-size: 1rem;
     font-weight: 500;
     color: white;
@@ -100,21 +101,26 @@ section {
     max-width: 888px;
     margin: 0 auto;
 }
-.card-container{
+
+.card-container {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4, 1fr);
-    
+
 }
-.card img{
+.card{
     text-align: center;
+}
+.card img {
     max-width: 100%;
 }
-.item-name{
+
+.item-name {
     font-size: 1.5rem;
     font-weight: 450;
 }
-.item-price{
+
+.item-price {
     font-weight: 800;
 }
 
@@ -136,10 +142,12 @@ section {
         margin-top: 28px;
         margin-left: 16px;
     }
-    .card-container{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-}
-/*  */
+
+    .card-container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*  */
 }

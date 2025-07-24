@@ -262,6 +262,11 @@ a {
 }
 
 
+.primary-btn:hover{
+    background-color: rgb(223, 72, 2);
+    cursor: pointer;
+}
+
 
 
 /* media query for smal device */

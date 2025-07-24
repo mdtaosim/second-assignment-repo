@@ -19,6 +19,7 @@
 }
 
 
+
 /* shared styles */
 .display-flex {
     display: flex;
@@ -152,33 +153,52 @@ section {
     max-width: 888px;
     margin: 0 auto;
 }
-
-.deasl-container {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
+.bloom-plant{
+    grid-area: bloom;
 }
-
-.bloom-plant {
+.zabo-plant{
+    grid-area: zabo;
+}
+.ana-plant{
+    grid-area: ana;
+}
+.bg-1{
     background-image: url("../assets/deal-bloom.png");
     background-repeat: no-repeat;
 }
-
-.ana-plant {
-    background-image: url("../assets/deal-ana.png");
-    background-repeat: no-repeat;
-}
-
-.zabo-plant {
+.bg-2{
     background-image: url("../assets/deal-zabo.png");
     background-repeat: no-repeat;
 }
-
+.bg-3{
+    background-image: url("../assets/deal-ana.png");
+    background-repeat: no-repeat;
+}
+.deasl-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "bloom  zabo"
+    "ana    zabo"
+    ;
+}
+.bloom-plant,
+.zabo-plant,
+.ana-plant{
+    text-align: center;
+    background-position: center;
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+}
+.deasl-container a{
+    color: white;
+}
 
 
 
 /* join section starte this section is located in footer section */
-.join-section{
+.join-section {
     padding: 80px 0px;
     text-align: center;
     background-image: url("../assets/news-letter-bg.png");
@@ -186,19 +206,22 @@ section {
     background-size: cover;
     margin-bottom: 50px;
 }
+
 .color {
     color: white;
     margin-bottom: 22px;
 }
-.join-section input{
+
+.join-section input {
     padding: 0.5rem 1.25rem;
     width: 644px;
 }
 
-.input-continer{
+.input-continer {
     justify-content: center;
     align-items: center;
 }
+
 .Subscribe-btn {
     padding: 0.5rem 3.5rem;
     font-size: 1rem;
@@ -208,6 +231,7 @@ section {
     background-color: rgba(233, 90, 8, 1);
 
 }
+
 
 
 /* footer section styles */
@@ -240,9 +264,7 @@ a {
 
 
 
-
-
-
+/* media query for smal device */
 @media screen and (max-width: 576px) {
     .banner {
         flex-direction: column-reverse;
@@ -279,7 +301,8 @@ a {
     .deasl-container {
         grid-template-columns: repeat(1, 1fr);
     }
-    .join-section input{
+
+    .join-section input {
         max-width: 80%;
         margin-bottom: 10px;
     }
@@ -287,5 +310,11 @@ a {
     .footer-container {
         grid-template-columns: repeat(1, 1fr);
         margin: 10px;
+    }
+    .deasl-container{
+        grid-template-areas: 
+        "bloom"
+        "ana"
+        "zabo";
     }
 }
